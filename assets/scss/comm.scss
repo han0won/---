@@ -195,21 +195,31 @@ h3 {
 }
 .type1,
 .type3 {
-    // background: white;
     color: white;
-    .type-inner {
-        background: $primary;
-    }
+    background: $primary;
 }
 .type2 {
-    background: $primary;
-    .type-inner {
         background: white;
-    }
 }
 
 .bacchus-jelly {
-	width: 100%;
-	height: 100vh;
-	overflow: hidden;
+    padding: 200px 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    .jelly-wrap {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+    .jelly-box {
+        display: flex;
+        flex-direction: column;
+        // justify-content: center;
+        align-items: center;
+        padding-top: 120px;
+        width: 33%;
+        height: 100%;
+    }
 }
