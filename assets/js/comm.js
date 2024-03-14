@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
           start: "top center",  
           end: "top center",  
           scrub: 3,  
-          // markers: true,  
         },
     });
 
@@ -22,7 +21,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
           start: "top center",  
           end: "bottom",  
           scrub: 3,  
-        //   markers: true,  
         },
     });
 
@@ -36,15 +34,15 @@ document.addEventListener("DOMContentLoaded", (event) => {
           snap: {
             snapTo: "types", 
             duration: 0.2, 
-            // delay: 0.2,
             ease: "Linear",
           },
         },
       });
 
     tl.addLabel("types")
-    .from(".type2", { x:"100%"} )
-    .from(".type3", { y:"100%"} )
+    .from(".type1", { x:"100%"} )
+    .from(".type2", { y:"100%"} )
+    .from(".type3", { x:"-100%"} )
     
 });
 
