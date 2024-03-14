@@ -150,7 +150,7 @@ h3 {
   font-size: 10rem;
   font-weight: 900;
   color: #160A8B;
-  -webkit-text-stroke: 1px white;
+  -webkit-text-stroke: 3px #EC0928;
 }
 .full_screen .title {
   position: fixed;
