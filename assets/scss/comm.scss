@@ -5,13 +5,14 @@
     position: fixed;
     width: 100%;
     height: 90px;
-    // background: white;
     z-index: 1000;
     .h-inner {
         display: flex;
+        justify-content: space-between;
         align-items: center;
         margin: 0 auto;
         max-width: 1440px;
+        padding: 0 20px;
         width: 100%;
         height: 100%;
     }
@@ -29,10 +30,23 @@
             color: transparent;
         }
     }
+    .menu-icon {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        cursor: pointer;
+        span {
+            display: block;
+            width: 30px;
+            height: 1px;
+            background: white;
+            transition: all 0.3s;
+        }
+    }
 }
 
 .intro {
-    background: #160A8B;
+    background: $primary;
     h2 {
         padding: 350px 0 50px;
         text-align: center;
@@ -44,7 +58,7 @@
         height: 100vh;
         border-radius: 20px;
         overflow: hidden;
-        transform: scale(0.5);
+        transform: scale(0.4);
         .intro-bg {
             display: flex;
             justify-content: center;
@@ -74,17 +88,22 @@
     }
 }
 
-
 .full_screen { 
     width: 100%; 
     height: 300vh; 
     text-align: center; 
     font-size: 6rem; 
     line-height: 100vh; 
-    // margin: 400px 0 0; 
     overflow: hidden;
     white-space: nowrap;
-    background: #160A8B;
+    background: $primary;
+    p {
+        text-align: center;
+        font-size: 10rem;
+        font-weight: 900;
+        color: $primary;
+        -webkit-text-stroke: 1px white;
+    }
     .title {
         position: fixed;
         top: 0;

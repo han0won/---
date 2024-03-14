@@ -51,9 +51,11 @@ body {
 }
 #header .h-inner {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   margin: 0 auto;
   max-width: 1440px;
+  padding: 0 20px;
   width: 100%;
   height: 100%;
 }
@@ -71,6 +73,19 @@ body {
   height: 100%;
   color: transparent;
 }
+#header .menu-icon {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  cursor: pointer;
+}
+#header .menu-icon span {
+  display: block;
+  width: 30px;
+  height: 1px;
+  background: white;
+  transition: all 0.3s;
+}
 
 .intro {
   background: #160A8B;
@@ -86,7 +101,7 @@ body {
   height: 100vh;
   border-radius: 20px;
   overflow: hidden;
-  transform: scale(0.5);
+  transform: scale(0.4);
 }
 .intro .intro-box .intro-bg {
   display: flex;
@@ -124,6 +139,13 @@ body {
   overflow: hidden;
   white-space: nowrap;
   background: #160A8B;
+}
+.full_screen p {
+  text-align: center;
+  font-size: 10rem;
+  font-weight: 900;
+  color: #160A8B;
+  -webkit-text-stroke: 1px white;
 }
 .full_screen .title {
   position: fixed;
