@@ -1,0 +1,125 @@
+@import 'variables', 'fonts', 'reset';
+
+
+#header {
+    position: fixed;
+    width: 100%;
+    height: 90px;
+    // background: white;
+    z-index: 1000;
+    .h-inner {
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        max-width: 1440px;
+        width: 100%;
+        height: 100%;
+    }
+    .logo {
+        width: 110px;
+        height: 70px;
+        background-image: url(../../images/bacchus-logo.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            color: transparent;
+        }
+    }
+}
+
+.intro {
+    background: #160A8B;
+    h2 {
+        padding: 350px 0 50px;
+        text-align: center;
+        color: white;
+        font-size: 4rem;
+    }
+    .intro-box {
+        margin: 20px 20px 0 20px;
+        height: 100vh;
+        border-radius: 20px;
+        overflow: hidden;
+        transform: scale(0.5);
+        .intro-bg {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            background-image: url(../../images/intro-bg.jpg);
+            background-position: center;
+            background-size: cover;
+            z-index: -100;
+        }
+        .intro-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        strong {
+            text-align: center;
+            font-size: 3rem;
+        }
+        span {
+            display: block;
+            width: 100%;
+            text-align: right;
+            color: white;
+        }
+    }
+}
+
+
+.full_screen { 
+    width: 100%; 
+    height: 300vh; 
+    text-align: center; 
+    font-size: 6rem; 
+    line-height: 100vh; 
+    // margin: 400px 0 0; 
+    overflow: hidden;
+    white-space: nowrap;
+    background: #160A8B;
+    .title {
+        position: fixed;
+        top: 0;
+        display: inline-block;
+        color: white;
+    }
+}
+
+.bacchus-type {
+    position: relative;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+}
+ 
+.type-box {
+    position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+.type1 {
+    background: cornsilk;
+}
+.type2 {
+    background: pink;
+}
+.type3 {
+    background: skyblue;
+}
+
+.bacchus-jelly {
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+}
