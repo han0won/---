@@ -45,6 +45,10 @@
     }
 }
 
+h3 {
+    font-size: 3rem;
+}
+
 .intro {
     background: $primary;
     h2 {
@@ -109,6 +113,33 @@
         top: 0;
         display: inline-block;
         color: white;
+    }
+}
+
+.bacchus-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+    margin: 200px 0;
+    // height: 100vh;
+    .info-wrap {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    .info-box {
+        .product-img {
+            height: 450px;
+        }
+        img {
+            height: 100%;
+            object-fit: cover;
+        }
+        p {
+            text-align: center;
+            font-size: 2rem;
+        }
     }
 }
 
