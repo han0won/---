@@ -221,5 +221,20 @@ h3 {
         padding-top: 120px;
         width: 33%;
         height: 100%;
+        strong {
+            font-size: 1.5rem;
+        }
+        .jelly-btn {
+            padding: 0 60px;
+            height: 50px;
+            line-height: 50px;
+            border-radius: 34px;
+            color: white;
+            background: $lighter;
+            transition: all 0.2s;
+            &:hover {
+                background: $point;
+            }
+        }
     }
 }

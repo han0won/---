@@ -266,4 +266,19 @@ h3 {
   padding-top: 120px;
   width: 33%;
   height: 100%;
+}
+.bacchus-jelly .jelly-box strong {
+  font-size: 1.5rem;
+}
+.bacchus-jelly .jelly-box .jelly-btn {
+  padding: 0 60px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 34px;
+  color: white;
+  background: #1616b3;
+  transition: all 0.2s;
+}
+.bacchus-jelly .jelly-box .jelly-btn:hover {
+  background: #EC0928;
 }/*# sourceMappingURL=comm.css.map */
