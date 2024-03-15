@@ -50,7 +50,7 @@ $(document).ready(function() {
     $(".brand-site ul").toggle();
   });
 
-  $('.counter').counterUp();
+  $('.counter').counterUp({ delay: 10, time: 1000 });
 
 });
 

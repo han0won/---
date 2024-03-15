@@ -302,6 +302,7 @@ h3 {
 }
 
 .bacchus-world {
+    padding-top: 100px;
     width: 100%;
     h3 {
         text-align: center;
@@ -311,12 +312,20 @@ h3 {
         }
     }
     .world-wrap {
+        position: relative;
         display: flex;
         justify-content: center;
         margin: 0 auto;
-        padding-bottom: 100px;
+        padding: 50px 0 200px;
         max-width: 1440px;
         width: 100%;
+        .world-map {
+            position: absolute;
+            top: 50px;
+            transform: scale(1.5);
+            z-index: -100;
+            opacity: 0.3;
+        }
     }
     .count-box {
         width: 60%;
@@ -334,7 +343,7 @@ h3 {
                 font-weight: 700;
             }
             .area {
-                padding: 10px 0 60px;
+                padding: 10px 0 80px;
                 font-size: 1.5rem;
             }
         }
