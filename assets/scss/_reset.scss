@@ -6,6 +6,17 @@
     box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background-color: $primary;
+}
+::-webkit-scrollbar-thumb {
+    background: $point;
+    border-radius: 20px;
+}
+
 dl,
 ul,
 ol,
