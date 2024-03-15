@@ -78,16 +78,20 @@ h3 {
             flex-direction: column;
             justify-content: center;
             align-items: center;
-        }
-        strong {
-            text-align: center;
-            font-size: 3rem;
-        }
-        span {
-            display: block;
-            width: 100%;
-            text-align: right;
-            color: white;
+            gap: 15px;
+            strong {
+                text-align: center;
+                font-size: 3rem;
+                span {
+                    color: $point;
+                }
+            }
+            > span {
+                display: block;
+                width: 100%;
+                text-align: right;
+                color: white;
+            }
         }
     }
 }

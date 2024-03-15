@@ -123,12 +123,16 @@ h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 15px;
 }
-.intro .intro-box strong {
+.intro .intro-box .intro-text strong {
   text-align: center;
   font-size: 3rem;
 }
-.intro .intro-box span {
+.intro .intro-box .intro-text strong span {
+  color: #EC0928;
+}
+.intro .intro-box .intro-text > span {
   display: block;
   width: 100%;
   text-align: right;
