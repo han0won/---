@@ -46,13 +46,16 @@ document.addEventListener("DOMContentLoaded", (event) => {
 });
 
 $(document).ready(function() {
+  
   $(".brand-site").click(function() {
     $(".brand-site ul").toggle();
   });
 
-  $('.counter').counterUp({ delay: 10, time: 1000 });
-
-});
-
+  $(".faq-title").click(function() {
+    $(this).siblings(".faq-desc").toggle();
+  });
+  
+  $(".counter").counterUp({ delay: 10, time: 1000 });
+})
 
 
