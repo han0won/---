@@ -49,6 +49,10 @@ $(document).ready(function() {
   $(".brand-site").click(function() {
     $(".brand-site ul").toggle();
   });
+
+  $('.counter').counterUp();
+
 });
+
 
 

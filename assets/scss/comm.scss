@@ -119,7 +119,6 @@ h3 {
         color: white;
     }
 }
-
 .bacchus-info {
     display: flex;
     flex-direction: column;
@@ -237,7 +236,6 @@ h3 {
             background: white;
     }
 }
- 
 .bacchus-jelly {
     padding: 200px 0;
     width: 100%;
@@ -298,6 +296,46 @@ h3 {
             transition: all 0.2s;
             &:hover {
                 background: $point;
+            }
+        }
+    }
+}
+
+.bacchus-world {
+    width: 100%;
+    h3 {
+        text-align: center;
+        margin-bottom: 100px;
+        .bacchus {
+            color: $point;
+        }
+    }
+    .world-wrap {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        padding-bottom: 100px;
+        max-width: 1440px;
+        width: 100%;
+    }
+    .count-box {
+        width: 60%;
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        li {
+            width: 33.3%;
+            span {
+                display: block;
+            }
+            .counter {
+                font-size: 2rem;
+                font-weight: 700;
+            }
+            .area {
+                padding: 10px 0 60px;
+                font-size: 1.5rem;
             }
         }
     }
