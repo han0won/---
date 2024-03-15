@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         pin: true, 
         start: "top", 
         end: "bottom", 
-        scrub: 1, 
+        scrub: 3, 
         snap: {
           snapTo: "history", 
           duration: 0.2, 
@@ -51,7 +51,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
         end: "bottom", 
         scrub: 1, 
         snap: {
-          // marker: true,
           snapTo: "types", 
           duration: 0.2, 
           ease: "Linear",
@@ -59,14 +58,30 @@ document.addEventListener("DOMContentLoaded", (event) => {
       },
     });
   tl.addLabel("types")
-  // .from("#type1", { x:"100%" } )
   .from("#type2", { x:"100%" } )
   .from("#type3", { x:"100%" } )
 
 });
   
+const bar = document.querySelector('.menu-icon')
+const span1 = document.querySelector('.span1')
+const span2 = document.querySelector('.span2')
+const span3 = document.querySelector('.span3')
+
+bar.addEventListener('click', function() {
+  span1.classList.toggle('click');
+  span2.classList.toggle('click');
+  span3.classList.toggle('click');
+})
+
+
 
 $(document).ready(function() {
+
+  $('.menu-icon').click(function() {
+    $('.menu-list').toggle();
+  });
+
   $(".brand-site").click(function() {
     $(".brand-site ul").toggle();
   });

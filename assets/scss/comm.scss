@@ -7,6 +7,7 @@
     height: 90px;
     z-index: 1000;
     .h-inner {
+        position: relative;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -37,10 +38,45 @@
         cursor: pointer;
         span {
             display: block;
-            width: 30px;
-            height: 1px;
+            width: 33px;
+            height: 3px;
             background: white;
             transition: all 0.3s;
+            border: 1px solid $primary;
+        }
+        .span1.click {
+            transform: rotate(45deg) translateX(5px) translateY(10px);
+        }
+        .span3.click {
+            transform: rotate(-45deg) translateX(8px) translateY(-13px);
+            transform-origin: center;
+        }
+        .span2.click {
+            opacity: 0;
+        }
+    }
+    .menu-list {
+        position: absolute;
+        top: 80px;
+        right: 20px;
+        display: none;
+        ul {
+            display: flex;
+            flex-direction: column;
+            padding: 15px 0;
+            background: white;
+            border: 1px solid $primary;
+            border-radius: 10px;
+        }
+        a {
+            text-align: center;
+            display: block;
+            padding: 10px 40px;
+            color: $text;
+            &:hover {
+                font-weight: 700;
+                color: $point;
+            }
         }
     }
 }

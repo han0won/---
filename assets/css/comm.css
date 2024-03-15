@@ -51,6 +51,7 @@ body {
   z-index: 1000;
 }
 #header .h-inner {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -82,10 +83,45 @@ body {
 }
 #header .menu-icon span {
   display: block;
-  width: 30px;
-  height: 1px;
+  width: 33px;
+  height: 3px;
   background: white;
   transition: all 0.3s;
+  border: 1px solid #160A8B;
+}
+#header .menu-icon .span1.click {
+  transform: rotate(45deg) translateX(5px) translateY(10px);
+}
+#header .menu-icon .span3.click {
+  transform: rotate(-45deg) translateX(8px) translateY(-13px);
+  transform-origin: center;
+}
+#header .menu-icon .span2.click {
+  opacity: 0;
+}
+#header .menu-list {
+  position: absolute;
+  top: 80px;
+  right: 20px;
+  display: none;
+}
+#header .menu-list ul {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0;
+  background: white;
+  border: 1px solid #160A8B;
+  border-radius: 10px;
+}
+#header .menu-list a {
+  text-align: center;
+  display: block;
+  padding: 10px 40px;
+  color: #202020;
+}
+#header .menu-list a:hover {
+  font-weight: 700;
+  color: #EC0928;
 }
 
 h3 {
