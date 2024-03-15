@@ -164,13 +164,64 @@ h3 {
   color: white;
 }
 
+.bacchus-history {
+  height: 100vh;
+}
+.bacchus-history h3 {
+  padding: 100px 0 80px;
+}
+.bacchus-history .history-wrap {
+  display: flex;
+  padding: 0 100px;
+  width: 5440px;
+}
+.bacchus-history .history {
+  width: 600px;
+  overflow: hidden;
+}
+.bacchus-history .history-text {
+  padding: 0 20px;
+}
+.bacchus-history .history-text strong {
+  font-size: 4rem;
+  line-height: 1.2;
+  color: #1616b3;
+}
+.bacchus-history .history-text span {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.bacchus-history .history-text p {
+  padding: 20px 0 40px;
+}
+
+.text-bling {
+  width: 100%;
+}
+.text-bling p {
+  padding: 35px 0;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 4rem;
+  font-weight: 700;
+  opacity: 0.1;
+  transition: all 0.3s;
+}
+.text-bling p:hover {
+  opacity: 1;
+}
+.text-bling span {
+  color: #1616b3;
+}
+
 .bacchus-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 80px;
-  height: 100vh;
+  gap: 60px;
+  padding: 200px 0;
 }
 .bacchus-info .info-wrap {
   display: flex;

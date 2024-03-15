@@ -24,29 +24,47 @@ document.addEventListener("DOMContentLoaded", (event) => {
         },
     });
 
-    let tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: ".bacchus-type",
-          pin: true, 
-          start: "top", 
-          end: "bottom", 
-          scrub: 1, 
-          snap: {
-            snapTo: "types", 
-            duration: 0.2, 
-            ease: "Linear",
-          },
+    let tl2 = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".bacchus-history",
+        pin: true, 
+        start: "top", 
+        end: "bottom", 
+        scrub: 1, 
+        snap: {
+          snapTo: "history", 
+          duration: 0.2, 
+          ease: "Linear",
         },
-      });
+      },
+    })
+    tl2.addLabel("history")
+    .to(".history-wrap", { x: "-100%"})
 
-    tl.addLabel("types")
-    .from("#type1", { x:"100%"} )
-    .from("#type2", { y:"100%"} )
-    .from("#type3", { x:"-100%"} )
+  let tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".bacchus-type",
+        pin: true, 
+        start: "top", 
+        end: "bottom", 
+        scrub: 1, 
+        snap: {
+          // marker: true,
+          snapTo: "types", 
+          duration: 0.2, 
+          ease: "Linear",
+        },
+      },
+    });
+  tl.addLabel("types")
+  // .from("#type1", { x:"100%" } )
+  .from("#type2", { x:"100%" } )
+  .from("#type3", { x:"100%" } )
+
 });
+  
 
 $(document).ready(function() {
-  
   $(".brand-site").click(function() {
     $(".brand-site ul").toggle();
   });
@@ -54,7 +72,7 @@ $(document).ready(function() {
   $(".faq-title").click(function() {
     $(this).siblings(".faq-desc").toggle();
   });
-  
+
   $(".counter").counterUp({ delay: 10, time: 1000 });
 })
 
