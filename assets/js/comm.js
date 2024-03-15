@@ -40,9 +40,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
       });
 
     tl.addLabel("types")
-    .from(".type1", { x:"100%"} )
-    .from(".type2", { y:"100%"} )
-    .from(".type3", { x:"-100%"} )
+    .from("#type1", { x:"100%"} )
+    .from("#type2", { y:"100%"} )
+    .from("#type3", { x:"-100%"} )
 });
 
 $(document).ready(function() {

@@ -121,7 +121,7 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 100px;
+    gap: 80px;
     height: 100vh;
     .info-wrap {
         display: flex;
@@ -129,17 +129,50 @@ h3 {
         width: 100%;
     }
     .info-box {
+        width: 280px;
+        text-align: center;
         .product-img {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 20px;
             height: 450px;
+            &::before {
+                content: '';
+                position: absolute;
+                top: 40%;
+                left: 40%;
+                display: block;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                background: $point;
+                z-index: -100;
+                transition: all 0.2s;
+            }
+            &:hover{
+                &::before {
+                    top: 111px;
+                    left: -11px;
+                    width: 300px;
+                    height: 300px;
+                }
+            }
         }
         img {
             height: 100%;
             object-fit: cover;
         }
         p {
+            padding-bottom: 10px;
             text-align: center;
             font-size: 2rem;
+            font-weight: 600;
             color: $text;
+        }
+        span {
+            color: $lighter;
         }
     }
 }
@@ -191,12 +224,12 @@ h3 {
             }
         }
     }
-    .type1,
-    .type3 {
+    #type1,
+    #type3 {
         color: white;
         background: $primary;
     }
-    .type2 {
+    #type2 {
             background: white;
     }
 }

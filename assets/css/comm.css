@@ -164,7 +164,7 @@ h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 100px;
+  gap: 80px;
   height: 100vh;
 }
 .bacchus-info .info-wrap {
@@ -172,8 +172,36 @@ h3 {
   justify-content: space-evenly;
   width: 100%;
 }
+.bacchus-info .info-box {
+  width: 280px;
+  text-align: center;
+}
 .bacchus-info .info-box .product-img {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
   height: 450px;
+}
+.bacchus-info .info-box .product-img::before {
+  content: "";
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #EC0928;
+  z-index: -100;
+  transition: all 0.2s;
+}
+.bacchus-info .info-box .product-img:hover::before {
+  top: 111px;
+  left: -11px;
+  width: 300px;
+  height: 300px;
 }
 .bacchus-info .info-box img {
   height: 100%;
@@ -181,9 +209,14 @@ h3 {
      object-fit: cover;
 }
 .bacchus-info .info-box p {
+  padding-bottom: 10px;
   text-align: center;
   font-size: 2rem;
+  font-weight: 600;
   color: #202020;
+}
+.bacchus-info .info-box span {
+  color: #1616b3;
 }
 
 .bacchus-type {
@@ -235,12 +268,12 @@ h3 {
 .bacchus-type .type-box .detail-wrap dd {
   width: 430px;
 }
-.bacchus-type .type1,
-.bacchus-type .type3 {
+.bacchus-type #type1,
+.bacchus-type #type3 {
   color: white;
   background: #160A8B;
 }
-.bacchus-type .type2 {
+.bacchus-type #type2 {
   background: white;
 }
 
