@@ -265,7 +265,33 @@ h3 {
   height: 100%;
 }
 .bacchus-jelly .jelly-box strong {
-  font-size: 1.5rem;
+  padding-top: 30px;
+  font-size: 1.75rem;
+}
+.bacchus-jelly .jelly-box p {
+  padding: 20px 0 30px;
+}
+.bacchus-jelly .jelly-box .jelly-img {
+  position: relative;
+}
+.bacchus-jelly .jelly-box .jelly-img::before {
+  content: "";
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #EC0928;
+  z-index: -100;
+  transition: all 0.2s;
+}
+.bacchus-jelly .jelly-box .jelly-img:hover::before {
+  top: 4px;
+  left: -4px;
+  width: 300px;
+  height: 300px;
 }
 .bacchus-jelly .jelly-box .jelly-btn {
   padding: 0 60px;
