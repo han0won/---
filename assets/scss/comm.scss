@@ -116,13 +116,6 @@ h3 {
     }
 }
 
-.bacchus-type {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-}
- 
 .bacchus-info {
     display: flex;
     flex-direction: column;
@@ -150,58 +143,64 @@ h3 {
         }
     }
 }
-.type-box {
-    position: absolute;
-	top: 0px;
-	left: 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-	width: 100%;
-	height: 100%;
-    .type-inner {
+.bacchus-type {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    .type-box {
+        position: absolute;
+        top: 0px;
+        left: 0px;
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 5%;
-        width: calc(100% - 100px);
-        height: calc(100% - 100px);
-        border-radius: 20px;
-    }
-    .title-wrap {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        span {
-            font-size: 1.3rem;
-            font-weight: 700;
-        }
-    }
-    .detail-wrap {
-        padding-top: 30px;
-        font-size: 0.9rem;
-        dl {
+        width: 100%;
+        height: 100%;
+        .type-inner {
             display: flex;
-            padding-top: 35px;
+            justify-content: center;
+            align-items: center;
+            gap: 5%;
+            width: calc(100% - 100px);
+            height: calc(100% - 100px);
+            border-radius: 20px;
         }
-        dt {
-            width: 90px;
-            font-weight: 600;
+        .title-wrap {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            span {
+                font-size: 1.3rem;
+                font-weight: 700;
+            }
         }
-        dd {
-            width: 430px;
+        .detail-wrap {
+            padding-top: 30px;
+            font-size: 0.9rem;
+            dl {
+                display: flex;
+                padding-top: 35px;
+            }
+            dt {
+                width: 90px;
+                font-weight: 600;
+            }
+            dd {
+                width: 430px;
+            }
         }
     }
+    .type1,
+    .type3 {
+        color: white;
+        background: $primary;
+    }
+    .type2 {
+            background: white;
+    }
 }
-.type1,
-.type3 {
-    color: white;
-    background: $primary;
-}
-.type2 {
-        background: white;
-}
-
+ 
 .bacchus-jelly {
     padding: 200px 0;
     width: 100%;
@@ -236,5 +235,66 @@ h3 {
                 background: $point;
             }
         }
+    }
+}
+
+#footer {
+    color: white;
+    background: $primary;
+    .f-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        width: 100%;
+        padding: 60px 20px;
+        font-size: 0.875rem;
+    }
+    .address {
+        text-align: center;
+    }
+    .brand-site {
+        position: relative;
+        width: 225px;
+        height: 35px;
+        border: 1px solid white;
+        p {
+            display: block;
+            padding: 0 10px;
+            width: 100%;
+            height: 100%;
+            line-height: 30px;
+            color: white;
+            cursor: pointer;
+        }
+        ul {
+            position: absolute;
+            left: -2px;
+            bottom: 33px;
+            display: none;
+            width: 227px;
+            z-index: 100;
+            border: 1px solid $primary;
+            background: white;
+        }
+        li {
+            color: $text;
+            border-top: 1px solid $primary;
+            a {
+                display: block;
+                padding: 5px 10px;
+                color: $text;
+            }
+            &:hover {
+                background: rgba(22, 10, 139,0.6);
+                a {
+                    color: white;
+                }
+            }
+        }
+    }
+    .copyright {
+        font-size: 0.75rem;
+        font-weight: 200;
     }
 }

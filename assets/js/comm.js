@@ -43,7 +43,12 @@ document.addEventListener("DOMContentLoaded", (event) => {
     .from(".type1", { x:"100%"} )
     .from(".type2", { y:"100%"} )
     .from(".type3", { x:"-100%"} )
-    
+});
+
+$(document).ready(function() {
+  $(".brand-site").click(function() {
+    $(".brand-site ul").toggle();
+  });
 });
 
 
