@@ -147,7 +147,7 @@ h3 {
 }
 .intro h2 {
   position: relative;
-  padding: 360px 0 50px;
+  padding: 360px 0 100px;
   text-align: center;
   color: white;
   font-size: 4rem;
@@ -230,7 +230,7 @@ h3 {
   height: 100vh;
 }
 .bacchus-history h3 {
-  padding: 100px 0 80px;
+  padding: 100px 0;
 }
 .bacchus-history .history-wrap {
   display: flex;
@@ -361,7 +361,7 @@ h3 {
   padding-bottom: 10px;
   text-align: center;
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 700;
   color: #202020;
 }
 .bacchus-info .info-box span {
@@ -453,7 +453,7 @@ h3 {
 }
 .bacchus-jelly .jelly-box strong {
   padding-top: 30px;
-  font-size: 1.75rem;
+  font-size: 2rem;
 }
 .bacchus-jelly .jelly-box p {
   padding: 20px 0 30px;
@@ -583,7 +583,8 @@ h3 {
 }
 .faq .faq-desc {
   display: none;
-  padding: 20px 20px 40px;
+  padding: 40px 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 .faq .faq-desc table {
   margin: 20px 0;
