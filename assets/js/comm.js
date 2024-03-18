@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         {
         x:"-150%",
         scrollTrigger: {
-          trigger: ".full_screen", 
+          trigger: ".full-screen", 
           start: "top center",  
           end: "bottom",  
           scrub: 3,  

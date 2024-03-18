@@ -202,7 +202,7 @@ h3 {
   color: white;
 }
 
-.full_screen {
+.full-screen {
   width: 100%;
   height: 300vh;
   text-align: center;
@@ -212,14 +212,14 @@ h3 {
   white-space: nowrap;
   background: #160A8B;
 }
-.full_screen p {
+.full-screen p {
   text-align: center;
   font-size: 10rem;
   font-weight: 900;
   color: #160A8B;
   -webkit-text-stroke: 3px #EC0928;
 }
-.full_screen .title {
+.full-screen .title {
   position: fixed;
   top: 0;
   display: inline-block;
@@ -421,6 +421,10 @@ h3 {
 }
 .bacchus-type .type-box .detail-wrap dd {
   width: 430px;
+}
+.bacchus-type .type-box .img-wrap img {
+  width: 100%;
+  height: 100%;
 }
 .bacchus-type #type1,
 .bacchus-type #type3 {
@@ -661,4 +665,68 @@ h3 {
 #footer .copyright {
   font-size: 0.75rem;
   font-weight: 200;
+}
+
+@media screen and (max-width: 1200px) {
+  .intro h2 {
+    font-size: 3.5rem;
+  }
+  .intro .intro-img1 {
+    left: -150px;
+  }
+  .intro .intro-img2 {
+    right: -200px;
+  }
+  .full-screen p {
+    font-size: 7rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .intro img {
+    display: none;
+  }
+  .intro .intro-box {
+    height: 60vh;
+  }
+  .bacchus-history .history-text strong {
+    font-size: 3rem;
+  }
+  .bacchus-history .history-text span {
+    font-size: 2rem;
+  }
+  .poster-img {
+    display: none;
+  }
+  .bacchus-info .info-wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+  .bacchus-info .info-box {
+    padding-top: 100px;
+  }
+  .bacchus-type h3 {
+    font-size: 2rem;
+  }
+  .bacchus-type .type-box .type-inner {
+    flex-direction: column-reverse;
+  }
+  .bacchus-type .type-box .text-wrap {
+    padding: 0 20px;
+    white-space: wrap;
+  }
+  .bacchus-type .type-box .title-wrap span {
+    font-size: 1rem;
+  }
+  .bacchus-type .type-box .detail-wrap {
+    padding-top: 15px;
+  }
+  .bacchus-type .type-box .detail-wrap dl {
+    padding-top: 25px;
+  }
+  .bacchus-type .type-box .detail-wrap dd {
+    width: auto;
+  }
+  .bacchus-type .type-box .img-wrap {
+    height: 45%;
+  }
 }/*# sourceMappingURL=comm.css.map */
