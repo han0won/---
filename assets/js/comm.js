@@ -100,7 +100,6 @@ const callback = entries => {
       if (entry.isIntersecting) {
           counterUp(el, {
               duration: 2000,
-              delay: 16,
           });
       }
   });

@@ -202,8 +202,13 @@ h3 {
         }
     }
 }
-.text-bling {
+.poster-img {
+    position: relative;
     width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     p {
         padding: 35px 0;
         text-align: center;
@@ -218,6 +223,33 @@ h3 {
     }
     span {
         color: $lighter;
+    }
+    img {
+        position: absolute;
+        top: 0;
+        z-index: -100;
+        opacity: 0;
+        transition: all 0.5s;
+    }
+    .img1,
+    .img3 {
+        left: 0;
+    }
+    .img2,
+    .img4 {
+        right: 0;
+    }
+    .list1:hover + .img1 {
+        opacity: 0.5;
+    }
+    .list2:hover + .img2 {
+        opacity: 0.5;
+    }
+    .list3:hover + .img3 {
+        opacity: 0.5;
+    }
+    .list4:hover + .img4 {
+        opacity: 0.5;
     }
 }
 .bacchus-info {

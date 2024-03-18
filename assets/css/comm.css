@@ -258,10 +258,15 @@ h3 {
   padding: 20px 0 40px;
 }
 
-.text-bling {
+.poster-img {
+  position: relative;
   width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.text-bling p {
+.poster-img p {
   padding: 35px 0;
   text-align: center;
   white-space: nowrap;
@@ -270,11 +275,38 @@ h3 {
   opacity: 0.1;
   transition: all 0.3s;
 }
-.text-bling p:hover {
+.poster-img p:hover {
   opacity: 1;
 }
-.text-bling span {
+.poster-img span {
   color: #1616b3;
+}
+.poster-img img {
+  position: absolute;
+  top: 0;
+  z-index: -100;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.poster-img .img1,
+.poster-img .img3 {
+  left: 0;
+}
+.poster-img .img2,
+.poster-img .img4 {
+  right: 0;
+}
+.poster-img .list1:hover + .img1 {
+  opacity: 0.5;
+}
+.poster-img .list2:hover + .img2 {
+  opacity: 0.5;
+}
+.poster-img .list3:hover + .img3 {
+  opacity: 0.5;
+}
+.poster-img .list4:hover + .img4 {
+  opacity: 0.5;
 }
 
 .bacchus-info {
