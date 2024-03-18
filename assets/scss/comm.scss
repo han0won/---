@@ -82,6 +82,7 @@
 }
 
 h3 {
+    padding: 0 20px;
     text-align: center;
     font-size: 3rem;
 }
@@ -343,6 +344,9 @@ h3 {
             display: flex;
             flex-direction: column;
             gap: 10px;
+            h3 {
+                padding: 0;
+            }
             span {
                 font-size: 1.3rem;
                 font-weight: 700;
@@ -427,6 +431,9 @@ h3 {
                     width: 300px;
                     height: 300px;
                 }
+            }
+            img {
+                width: 100%;
             }
         }
         .jelly-btn {
@@ -632,6 +639,22 @@ h3 {
             font-size: 7rem;
         }
     }
+    .bacchus-world {
+        .world-wrap {
+            flex-direction: column-reverse;
+            align-items: center;
+            padding-top: 0;
+        }
+        .count-box {
+            width: 100%;
+            ul {
+                padding: 60px 20px 0;
+            }
+            li {
+                text-align: center;
+            }
+        }
+    }
 }
 @media screen and (max-width: 900px) {
     .intro {
@@ -640,6 +663,9 @@ h3 {
         }
         .intro-box {
             height: 60vh;
+            .intro-text strong {
+                font-size: 2.5rem;
+            }
         }
     }
     .bacchus-history {
@@ -669,11 +695,12 @@ h3 {
             font-size: 2rem;
         }
         .type-box {
+            padding: 0 20px;
             .type-inner {
                 flex-direction: column-reverse;
+                width: 100%;
             }
             .text-wrap {
-                padding: 0 20px;
                 white-space: wrap;
             }
             .title-wrap {
@@ -684,6 +711,7 @@ h3 {
             .detail-wrap {
                 padding-top: 15px;
                 dl {
+                    flex-direction: column;
                     padding-top: 25px;
                 }
                 dd {
@@ -695,4 +723,16 @@ h3 {
             }
         } 
     }
+    .bacchus-jelly {
+        .jelly-wrap {
+            flex-direction: column;
+            align-items: center;
+        }
+        .jelly-box {
+            width: 100%;
+        }
+    }
+}
+@media screen and (max-width: 475px) {
+    
 }
