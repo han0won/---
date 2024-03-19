@@ -143,6 +143,10 @@ h3 {
   font-size: 3rem;
 }
 
+.m-visible {
+  display: none;
+}
+
 .intro {
   background: #160A8B;
 }
@@ -530,6 +534,12 @@ h3 {
   z-index: -100;
   opacity: 0.3;
 }
+.bacchus-world .world-img {
+  padding: 0 20px;
+}
+.bacchus-world .world-img img {
+  width: 100%;
+}
 .bacchus-world .count-box {
   width: 60%;
 }
@@ -712,6 +722,9 @@ h3 {
   .intro .intro-box .intro-text strong {
     font-size: 2.5rem;
   }
+  .full-screen p {
+    font-size: 6rem;
+  }
   .bacchus-history .history-text strong {
     font-size: 3rem;
   }
@@ -727,6 +740,9 @@ h3 {
   }
   .bacchus-info .info-box {
     padding-top: 100px;
+  }
+  .bacchus-info .info-box:first-child {
+    padding-top: 0;
   }
   .bacchus-type h3 {
     font-size: 2rem;
@@ -763,5 +779,36 @@ h3 {
   }
   .bacchus-jelly .jelly-box {
     width: 100%;
+  }
+}
+@media screen and (max-width: 670px) {
+  .m-hidden {
+    display: none;
+  }
+  .bacchus-world .count-box li .counter {
+    font-size: 1.5rem;
+  }
+  .bacchus-world .count-box li .area {
+    font-size: 1.25rem;
+  }
+  .bacchus-jelly .m-visible {
+    display: block;
+  }
+}
+@media screen and (max-width: 475px) {
+  .bacchus-history h3 {
+    padding-bottom: 60px;
+  }
+  .bacchus-history .history {
+    width: 350px;
+  }
+  .bacchus-history .m-visible {
+    display: block;
+  }
+  .bacchus-world .count-box li {
+    width: 50%;
+  }
+  .faq .faq-title span {
+    font-size: 1.25rem;
   }
 }/*# sourceMappingURL=comm.css.map */

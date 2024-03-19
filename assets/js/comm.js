@@ -107,6 +107,6 @@ const callback = entries => {
 
 const IO = new IntersectionObserver(callback, { threshold: 1 });
 
-const el = document.querySelector('.counter');
-IO.observe(el);
+const elements = document.querySelectorAll('.counter');
+elements.forEach(el => IO.observe(el.parentElement));
 

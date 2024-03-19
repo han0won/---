@@ -86,6 +86,9 @@ h3 {
     text-align: center;
     font-size: 3rem;
 }
+.m-visible {
+    display: none;
+}
 
 .intro {
     background: $primary;
@@ -475,6 +478,12 @@ h3 {
             opacity: 0.3;
         }
     }
+    .world-img {
+        padding: 0 20px;
+        img {
+            width: 100%;
+        }
+    }
     .count-box {
         width: 60%;
         ul {
@@ -668,6 +677,11 @@ h3 {
             }
         }
     }
+    .full-screen {
+        p {
+            font-size: 6rem;
+        }
+    }
     .bacchus-history {
         .history-text {
             strong {
@@ -687,7 +701,10 @@ h3 {
             align-items: center;
         }
         .info-box {
-            padding-top: 100px
+            padding-top: 100px;
+            &:first-child {
+                padding-top: 0;
+            }
         }
     }
     .bacchus-type {
@@ -733,6 +750,48 @@ h3 {
         }
     }
 }
+@media screen and (max-width: 670px) {
+    .m-hidden {
+        display: none;
+    }
+    .bacchus-world {
+        .count-box li {
+            .counter {
+                font-size: 1.5rem;
+            }
+            .area {
+                font-size: 1.25rem;
+            }
+        }
+    }
+    .bacchus-jelly {
+        .m-visible {
+            display: block;
+        }
+    }
+}
 @media screen and (max-width: 475px) {
-    
+    .bacchus-history {
+        h3 {
+            padding-bottom: 60px;
+        }
+        .history {
+            width: 350px;
+        }
+        .m-visible {
+            display: block;
+        }
+    }
+    .bacchus-world {
+        .count-box li {
+            width: 50%;
+        }
+    }
+    .faq {
+        .faq-title {
+            span {
+                font-size: 1.25rem;
+            }
+        }
+    }
 }
