@@ -179,10 +179,10 @@ h3 {
         padding: 100px 0;
     }
     .history-wrap {
+        position: relative;
+        // left: auto;
         display: flex;
-        // margin: 0 auto;
         padding: 0 100px;
-        // max-width: 1440px;
         width: 5440px;
     }
     .history {
@@ -771,15 +771,20 @@ h3 {
     }
 }
 @media screen and (max-width: 475px) {
+    .intro {
+        .intro-box {
+            height: 40vh;
+        }
+        .m-visible {
+            display: block;
+        }
+    }
     .bacchus-history {
         h3 {
             padding-bottom: 60px;
         }
         .history {
             width: 350px;
-        }
-        .m-visible {
-            display: block;
         }
     }
     .bacchus-world {

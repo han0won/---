@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       },
     })
     tl2.addLabel("history")
-    .to(".history-wrap", { x: "-100%"})
+    .to(".history-wrap", { x: "-3800px"})
 
   let tl = gsap.timeline({
       scrollTrigger: {

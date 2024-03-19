@@ -238,6 +238,7 @@ h3 {
   padding: 100px 0;
 }
 .bacchus-history .history-wrap {
+  position: relative;
   display: flex;
   padding: 0 100px;
   width: 5440px;
@@ -796,14 +797,17 @@ h3 {
   }
 }
 @media screen and (max-width: 475px) {
+  .intro .intro-box {
+    height: 40vh;
+  }
+  .intro .m-visible {
+    display: block;
+  }
   .bacchus-history h3 {
     padding-bottom: 60px;
   }
   .bacchus-history .history {
     width: 350px;
-  }
-  .bacchus-history .m-visible {
-    display: block;
   }
   .bacchus-world .count-box li {
     width: 50%;
