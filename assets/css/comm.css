@@ -755,9 +755,6 @@ h3 {
     flex-direction: column-reverse;
     width: 100%;
   }
-  .bacchus-type .type-box .text-wrap {
-    white-space: wrap;
-  }
   .bacchus-type .type-box .title-wrap span {
     font-size: 1rem;
   }
