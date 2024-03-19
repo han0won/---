@@ -213,6 +213,9 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
+    .list-inner {
+        width: 100%;
+    }
     p {
         padding: 35px 0;
         text-align: center;

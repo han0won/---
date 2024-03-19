@@ -272,6 +272,9 @@ h3 {
   justify-content: center;
   align-items: center;
 }
+.poster-img .list-inner {
+  width: 100%;
+}
 .poster-img p {
   padding: 35px 0;
   text-align: center;
